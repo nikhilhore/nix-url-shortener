@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 
 router.post('/convertLongUrlToShort', async (req, res) => {
     try {
-        const { longUrl } = req.body;
+        const longUrl = req.body.longUrl || site;
         let shortUrl = site;
         const result = await LongUrlAndShortId.findOne({ longUrl }).exec();
         if (result == null) {
