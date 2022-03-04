@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <label for="longUrl">Long URL</label>
+    <input id="longUrl" type="text">
+    <label for="shortUrl">Short URL</label>
+    <input type="text" id="shortUrl">
+    <button id="submitBtn">Submit</button>
+    <script src="assets/script.js"></script>
+</body>
+</html>
+
+<!-- 
+// req = {
+    body: {
+        path: "https://www.google.com/longshort",
+        data: {name: "dskjflasj", id: "lajdflksaj"}
+    }
+}
+
+// GET req = {
+    body: {
+        path: "https://www.google.com/longshort",
+        data: {name: "dskjflasj", id: "lajdflksaj"}
+    }
+}
+
+// POST req = {
+    body: {
+        path: "https://www.google.com/longshort",
+        data: {name: "dskjflasj", id: "lajdflksaj"}
+    }
+}
+
+// req (https://www.google.com/longshort, {name: , id: , pass: })
+// req -> GET, POST, PUT, DELETE, 
+// res -->
